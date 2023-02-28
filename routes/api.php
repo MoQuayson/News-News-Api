@@ -44,4 +44,5 @@ Route::middleware(['auth:sanctum'])->group(function(){
 
     Route::resource('users', UsersController::class);
     Route::resource('feeds-preferences', FeedsPreferencesController::class);
+    Route::resource('sign-out', SignoutController::class);
 });

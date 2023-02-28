@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class SignoutController extends Controller
 {
@@ -11,9 +13,21 @@ class SignoutController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        $user= User::where('id', auth()->user()->id)->first();
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        $user->tokens()->delete();
+
+        $data =[
+            'status'=> 200,
+            'message'=> 'sign-out successfully'
+        ];
+
+        return response()->json($data);
     }
 
     /**
