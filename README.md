@@ -53,7 +53,7 @@ Open http://127.0.0.1:8000 to view it in your browser.
 
 ## Screenshots
 
-![App Screenshot]("https://github.com/MoQuayson/CodeHaven.Assignment/blob/master/screenshots/get feeds.png")
+![App Screenshot](https://github.com/MoQuayson/News-News-Api/blob/master/scrrenshots/get%20feeds.png)
 
 ## Authors
 
