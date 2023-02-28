@@ -55,6 +55,8 @@ Open http://127.0.0.1:8000 to view it in your browser.
 
 ![App Screenshot](https://github.com/MoQuayson/News-News-Api/blob/master/scrrenshots/get%20feeds.png)
 
+![App Screenshot](https://github.com/MoQuayson/News-News-Api/blob/master/scrrenshots/search%20feeds.png)
+
 ## Authors
 
 - [@MoQuayson](https://www.github.com/MoQuayson)
